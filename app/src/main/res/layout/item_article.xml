@@ -8,7 +8,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/urlTextView"
         android:textSize="18sp"
-        android:text="Hi"
         android:layout_above="@+id/titleTextView"
         android:textColor="#ff03559c"
         android:layout_centerVertical="true"
@@ -18,7 +17,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/titleTextView"
         android:textSize="20sp"
-        android:text="Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
         android:layout_margin="20dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
@@ -28,7 +26,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/contentTextView"
         android:textSize="18sp"
-        android:text="Hi"
         android:layout_below="@+id/titleTextView"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>

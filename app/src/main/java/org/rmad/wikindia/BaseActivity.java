@@ -124,7 +124,7 @@ public class BaseActivity extends ActionBarActivity {
     public class DataHelper extends AsyncTask {
 
         private static final String TEST_URL = "http://127.0.0.1:5000";
-        private static final String LIVE_URL = "http://127.0.0.1:5000";
+        private static final String LIVE_URL = "http://souravbasu17.pythonanywhere.com/";
 
         Context context;
 
@@ -133,10 +133,11 @@ public class BaseActivity extends ActionBarActivity {
             try {
                 OkHttpClient client = new OkHttpClient();
                 Request request = new Request.Builder()
-                        .url(TEST_URL)
+                        .url(LIVE_URL)
                         .build();
                 Response response = client.newCall(request).execute();
                 String json = response.body().string();
+                Log.d(TAG,json);
                 Gson gson = new Gson();
                 ResponseBean responseBean = gson.fromJson(json,ResponseBean.class);
                 //if (responseBean.getStatus().equals("success"))
